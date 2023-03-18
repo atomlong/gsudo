@@ -1,0 +1,13 @@
+pkgbase = gsudo
+	pkgdesc = Sudo for Windows
+	pkgver = 2.0.6
+	pkgrel = 1
+	url = https://github.com/gerardog/gsudo
+	arch = x86_64
+	arch = i686
+	license = MIT
+	options = !strip
+	source = gsudo-2.0.6.tar.gz::https://github.com/gerardog/gsudo/archive/v2.0.6.tar.gz
+	sha256sums = 61fb55eec5149f8bb915692a98b1acabfdb33f0351edfaf0bc4f9996269ee3fc
+
+pkgname = gsudo
