@@ -9,6 +9,7 @@ arch=('x86_64' 'i686')
 url="https://github.com/gerardog/gsudo"
 license=('MIT')
 options=('!strip')
+install="${_realname}.install"
 source=("${_realname}"-${pkgver}.tar.gz::"https://github.com/gerardog/gsudo/archive/v${pkgver}.tar.gz")
 sha256sums=('61fb55eec5149f8bb915692a98b1acabfdb33f0351edfaf0bc4f9996269ee3fc')
 
