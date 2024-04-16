@@ -2,7 +2,7 @@
 
 _realname=gsudo
 pkgname="${_realname}"
-pkgver=2.0.6
+pkgver=2.4.4
 pkgrel=1
 pkgdesc="Sudo for Windows"
 arch=('x86_64' 'i686')
@@ -11,7 +11,7 @@ license=('MIT')
 options=('!strip')
 install="${_realname}.install"
 source=("${_realname}"-${pkgver}.tar.gz::"https://github.com/gerardog/gsudo/archive/v${pkgver}.tar.gz")
-sha256sums=('61fb55eec5149f8bb915692a98b1acabfdb33f0351edfaf0bc4f9996269ee3fc')
+sha256sums=('e1101f341a96cf230b6b656b72aa295c8ba9fc740803f8ef3f97d4c33f0ab989')
 
 die () {
   echo "$*" >&2
