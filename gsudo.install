@@ -1,6 +1,6 @@
 post_install() {
     [ -h /usr/bin/sudo ] || {
-    MSYS="winsymlinks:lnk" ln -sf "/usr/bin/gsudo" /usr/bin/sudo
+    MSYS="winsymlinks:lnk" ln -sf "${MSYSTEM_PREFIX}/bin/gsudo" ${MSYSTEM_PREFIX}/bin/sudo
     }
 }
 
@@ -9,5 +9,5 @@ post_upgrade() {
 }
 
 post_remove() {
-  [ -h /usr/bin/sudo ] && rm -vf /usr/bin/sudo
+  [ -h ${MSYSTEM_PREFIX}/bin/sudo ] && rm -vf ${MSYSTEM_PREFIX}/bin/sudo
 }
