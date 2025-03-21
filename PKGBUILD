@@ -45,6 +45,6 @@ build() {
 package () {
   cd "$srcdir"/${_realname}-${pkgver}
 
-  install -d "${pkgdir}/${MSYSTEM_PREFIX}/bin"
-  install -m755 ${OUTDIR}/${_realname}.exe "${pkgdir}/${MSYSTEM_PREFIX}/bin"
+  install -d "${pkgdir}/usr/bin"
+  install -m755 ${OUTDIR}/${_realname}.exe "${pkgdir}/usr/bin"
 }
